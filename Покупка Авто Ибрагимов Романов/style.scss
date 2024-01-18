@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+background-color: #181818;
+display: flex;
+height: 80px;
+align-items: center;    
+}
+
+.logo h1{
+    color: white;
+    font-weight: 400;
+    font-size: 32px;
+    font-family: 'Inter' sans-serif;
+}
+
+.nav-menu{
+    width: 1800px;
+    margin: 0 auto;
+}
+
