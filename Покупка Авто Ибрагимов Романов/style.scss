@@ -1,24 +1,90 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: 'Inter';
 }
-
-header{
-background-color: #181818;
-display: flex;
-height: 80px;
-align-items: center;    
-}
-
-.logo h1{
-    color: white;
-    font-weight: 400;
-    font-size: 32px;
-    font-family: 'Inter' sans-serif;
-}
-
-.nav-menu{
-    width: 1800px;
+.container{
     margin: 0 auto;
+    width: 1800px;
+}
+header{
+    background-color: #181818;
+    color: white;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    .sity{
+        display: flex;
+        justify-content: space-between;
+    }
+    .menu{
+        ul{
+            width: 400px;
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+        }
+            a{
+                color: white;
+                text-decoration: none;
+            }
+        
+    }
+    .znaki{
+        ul{
+            display: flex;
+            justify-content: center;
+            list-style-type: none;
+        }
+    }
+    .zvonok{
+        ul{
+            display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        }
+    }
+    .mashinka{
+        ul{
+            display: flex;
+            justify-content: space-between;
+            list-style-type: none;
+        }                                        
+    }
 }
 
+.head{
+     height: 860px;
+    background-image: url(img/bg.png);
+    font-family: 'Unbounded';
+    color: #fff;
+    h1{
+        margin: 0 auto;
+        text-align: center;
+        font-size: 89px;
+    }
+    .p{
+        text-align: center;
+        font-size: 24px;
+        color: #fff;
+        font-family: 'PP Pangram Sans';
+    }
+    .row{
+        display: flex;
+        justify-content: space-between;
+        p{
+            font-family: 'PP Pangram Sans';
+        }
+        .row1{
+            font-size: 17px;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .row2{
+                margin-right: 15px;
+            }
+        }
+    }
+}

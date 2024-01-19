@@ -3,21 +3,138 @@ body {
   padding: 0;
 }
 
+.container {
+  margin: 0 auto;
+  padding: 0;
+  width: 1800px;
+}
+
 header {
   background-color: #181818;
+  color: white;
+}
+
+.nav {
   display: flex;
-  height: 80px;
+  justify-content: space-between;
+  padding-top: 20px;
+}
+.nav .sity {
+  display: flex;
+  justify-content: space-between;
+}
+.nav .menu ul {
+  width: 600px;
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  
+}
+.nav .menu a {
+  color: white;
+  text-decoration: none;
+}
+.nav .znaki ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+  gap: 14px;
+}
+.nav .zvonok ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  font-family: "Unbounded", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.nav .mashinka ul {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.head { 
+  height: 900px;
+  background-image: url(img/bg.png);
+  font-family: "Unbounded";
+  color: #fff;
+  background-size: cover;
+  border-radius: 0px 0px 36px 36px;
+}
+.head h1 {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 89px;
+  padding-top: 200px;
+}
+.head p {
+  text-align: center;
+  font-size: 24px;
+  color: #fff;
+  font-family: "PP Pangram Sans";
+  padding-top: 20px;
+}
+.head .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 220px;
+  padding-top: 150px;
+  font-size: 10px;
+}
+.head .row p {
+  font-family: "Inter";
+  font-size: 20px;
+  padding-top: 0px;
+  text-align: left;
+}
+.head .row .row1 {
+  color: #fff;
+  display: flex;
+  justify-content: center;
   align-items: center;
 }
+.head .row .row1 .row2 {
+  margin-right: 15px;
+}/*# sourceMappingURL=style.css.map */
 
-.logo h1 {
-  color: white;
-  font-weight: 400;
+.logo p {
+  font-family: "Inter", sans-serif;
+  font-weight: 200;
   font-size: 32px;
-  font-family: "Inter" sans-serif;
+  margin-top: 5px;
 }
 
-.nav-menu {
-  width: 1800px;
-  margin: 0 auto;
-}/*# sourceMappingURL=style.css.map */
+.but button{
+font-size: 13px;
+font-weight: 700;
+padding-bottom: 5px;
+margin-top: 8px;
+text-align: center;
+width: 149px;
+height: 44px;
+border-radius: 8px;
+border: solid #3C3C3C;
+background-color: #181818;
+color: white;
+font-family: "PP Pangram Sans", sans-serif;
+
+}
+.mashinka ul{
+  margin-top: 7px;
+}
+
+.head hr{
+  width:  1500px;
+  position: absolute;
+  top: 74%;
+  left: 10%;
+  opacity: 23% ;
+}
