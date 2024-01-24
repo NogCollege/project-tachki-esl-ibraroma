@@ -1,140 +1,389 @@
-body {
+@charset "UTF-8";
+* {
   margin: 0;
   padding: 0;
 }
 
-.container {
-  margin: 0 auto;
-  padding: 0;
-  width: 1800px;
+body {
+  background-color: #F4F4F4;
 }
 
 header {
   background-color: #181818;
-  color: white;
+  display: flex;
+  height: 80px;
+  align-items: center;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-between;
-  padding-top: 20px;
-}
-.nav .sity {
-  display: flex;
-  justify-content: space-between;
-}
-.nav .menu ul {
-  width: 600px;
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  font-family: "Inter", sans-serif;
-  font-weight: 200;
-  font-size: 15px;
-  
-}
-.nav .menu a {
+.logo h1 {
   color: white;
-  text-decoration: none;
+  font-weight: 400;
+  font-size: 32px;
+  font-family: "Inter", sans-serif;
 }
-.nav .znaki ul {
-  display: flex;
-  justify-content: space-around;
-  list-style-type: none;
-  gap: 14px;
+
+.container {
+  width: 1320px;
+  margin: 0 auto;
 }
-.nav .zvonok ul {
+
+.nav-menu {
+  width: 1800px;
+  margin: 0 auto;
+}
+
+.menu {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
-  font-family: "Unbounded", sans-serif;
+  align-items: center;
+}
+
+.menu-l {
+  display: flex;
+  color: white;
+}
+.menu-l li {
+  color: white;
+  margin-left: 25px;
+  font-weight: 500;
+  font-size: 15px;
+  font-family: "PP Pangram Sans", sans-serif;
+}
+
+.but {
+  font-size: 13px;
+  font-weight: 700;
+  padding-bottom: 5px;
+  margin-top: 8px;
+  text-align: center;
+  width: 149px;
+  height: 44px;
+  border-radius: 8px;
+  border: solid #3C3C3C;
+  background-color: #181818;
+  color: white;
+  font-family: "PP Pangram Sans", sans-serif;
+}
+
+.nomer {
+  color: white;
   font-weight: 700;
   font-size: 18px;
+  font-family: "Unbounded", sans-serif;
 }
 
-.nav .mashinka ul {
+.we2 {
   display: flex;
-  justify-content: space-between;
-  list-style-type: none;
-  gap: 12px;
-  margin-bottom: 20px;
 }
 
-.head { 
-  height: 900px;
-  background-image: url(img/bg.png);
-  font-family: "Unbounded";
-  color: #fff;
+.we2 img {
+  margin-left: 10px;
+}
+
+.we1 {
+  display: flex;
+}
+.we1 img {
+  margin-left: 15px;
+}
+
+.sect1 {
+  color: white;
+  background-image: url(img/бг.png);
   background-size: cover;
-  border-radius: 0px 0px 36px 36px;
+  width: 1860px;
+  height: 966px;
+  margin-left: 20px;
 }
-.head h1 {
-  margin: 0 auto;
+.sect1 hr {
+  width: 80%;
+  margin-left: 10%;
+  color: #FFFFFF;
+  margin-top: 100px;
+}
+.sect1 .sect1-text {
+  display: block;
   text-align: center;
+  justify-content: center;
+  padding-top: 90px;
+  padding-bottom: 60px;
+}
+.sect1 .sect1-text h1 {
+  text-transform: uppercase;
   font-size: 89px;
-  padding-top: 200px;
+  font-family: "Unbounded";
 }
-.head p {
-  text-align: center;
+.sect1 .sect1-text p {
+  padding-top: 30px;
   font-size: 24px;
-  color: #fff;
   font-family: "PP Pangram Sans";
-  padding-top: 20px;
 }
-.head .row {
+.sect1 .spis1 {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  padding: 220px;
-  padding-top: 150px;
-  font-size: 10px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 100px;
+  position: relative;
+  z-index: 2;
 }
-.head .row p {
-  font-family: "Inter";
-  font-size: 20px;
-  padding-top: 0px;
-  text-align: left;
-}
-.head .row .row1 {
-  color: #fff;
+.sect1 .spis1 li {
+  padding-left: 70px;
   display: flex;
+}
+.sect1 .spis1 li h3 {
+  display: flex;
+  color: black;
+  background-color: white;
+  width: 26px;
+  height: 26px;
+  border-radius: 100px;
+  font-size: 16px;
   justify-content: center;
   align-items: center;
 }
-.head .row .row1 .row2 {
-  margin-right: 15px;
-}/*# sourceMappingURL=style.css.map */
-
-.logo p {
-  font-family: "Inter", sans-serif;
-  font-weight: 200;
-  font-size: 32px;
-  margin-top: 5px;
+.sect1 .spis1 li p {
+  padding-left: 20px;
+  font-size: 17px;
+  font-family: "PP Pangram Sans";
+  font-weight: 300;
 }
 
-.but button{
-font-size: 13px;
-font-weight: 700;
-padding-bottom: 5px;
-margin-top: 8px;
-text-align: center;
-width: 149px;
-height: 44px;
-border-radius: 8px;
-border: solid #3C3C3C;
-background-color: #181818;
-color: white;
-font-family: "PP Pangram Sans", sans-serif;
-
-}
-.mashinka ul{
-  margin-top: 7px;
-}
-
-.head hr{
-  width:  1500px;
+.dop-sect1 {
   position: absolute;
-  top: 74%;
-  left: 10%;
-  opacity: 23% ;
+  z-index: 1;
+  background-color: white;
+  left: 17%;
+  width: 1320px;
+  height: 271px;
+  border-radius: 20px;
+  bottom: -25%;
 }
+.dop-sect1 .form-but {
+  width: 201px;
+  height: 76px;
+  color: white;
+  border-radius: 10px;
+  border: solid 0px;
+  font-family: "PP Pangram Sans";
+  font-size: 16px;
+  background: linear-gradient(to top right, #9F7437, #E3D293);
+}
+.dop-sect1 .text-for {
+  padding-left: 70px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: end;
+  width: 380px;
+  height: 54px;
+}
+.dop-sect1 .text-for p {
+  font-size: 14px;
+  font-family: "PP Pangram Sans";
+}
+.dop-sect1 h2 {
+  padding-top: 50px;
+  padding-left: 50px;
+  font-family: "Unbounded";
+  font-size: 22px;
+}
+.dop-sect1 .forma {
+  display: flex;
+  padding-top: 30px;
+  padding-left: 20px;
+}
+.dop-sect1 .p {
+  display: grid;
+  width: 130px;
+  justify-content: center;
+  align-items: end;
+  height: 54px;
+}
+.dop-sect1 .p .gal {
+  margin-right: 15px;
+}
+.dop-sect1 .form {
+  text-align: center;
+  width: 242px;
+  height: 76px;
+  margin-left: 20px;
+  border-radius: 10px;
+  background-color: #F5F5F5;
+  border: solid 1px #F5F5F5;
+  font-family: "PP Pangram Sans";
+  color: #A4A4A4;
+}
+
+ul {
+  list-style: none;
+}
+
+.sect2 {
+  margin-top: 12%;
+}
+.sect2 .sect2-he {
+  display: flex;
+  flex-direction: row;
+  margin-left: 90px;
+}
+.sect2 .sect2-he h1 {
+  color: #1F1F1F;
+  font-family: "Unbounded";
+  font-size: 48px;
+  margin-left: 230px;
+}
+.sect2 .sect2-he button {
+  margin-left: 20px;
+  margin-top: 15px;
+  height: 44px;
+  width: 124px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  border: solid 4px #1F1F1F;
+}
+.sect2 .car {
+  display: flex;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  flex-direction: row;
+  font-family: "PP Pangram Sans";
+}
+.sect2 .car img {
+  margin-right: 15px;
+}
+.sect2 .car li {
+  margin-left: 50px;
+}
+.sect2 .car .black {
+  display: flex;
+  background-color: #1F1F1F;
+  width: 217px;
+  height: 74px;
+  color: #FFFFFF;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.sect2 .car .white {
+  display: flex;
+  background-color: #FFFFFF;
+  width: 217px;
+  height: 74px;
+  color: #1F1F1F;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.sect2 .car .gray {
+  display: flex;
+  background-color: #ffffff;
+  width: 217px;
+  height: 74px;
+  color: #1F1F1F;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+}
+.sect2 .car .black:hover, .sect2 .car .white:hover, .sect2 .car .gray:hover {
+  background-color: #EAEAEA; /* изменяем цвет при наведении */
+  color: #1F1F1F; /* меняем цвет текста */
+}
+.sect2 .katal {
+  display: flex;
+  flex-direction: row;
+  -moz-column-count: 2;
+       column-count: 2;
+}
+.sect2 .katal li {
+  display: flex;
+  width: 424px;
+  height: 483px;
+  background-color: #FFFFFF;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.sect2 .katal li img {
+  width: 286px;
+  height: 153px;
+}
+.sect2 .katal li h4 {
+  font-size: 20px;
+  font-family: "PP Pangram Sans";
+  padding-top: 20px;
+}
+.sect2 .katal li .text-s2 {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+}
+.sect2 .katal li .text-s2 p {
+  font-size: 13px;
+  font-family: "PP Pangram Sans";
+  color: #707070;
+}
+.sect2 .katal li .text-s2 .pa {
+  padding-left: 10px;
+}
+.sect2 .katal li .cen {
+  display: flex;
+  flex-direction: row;
+  padding-top: 15px;
+}
+.sect2 .katal li .cen button {
+  width: 135px;
+  height: 40px;
+  color: white;
+  border-radius: 6px;
+  border: solid 0px;
+  font-family: "PP Pangram Sans";
+  font-size: 12px;
+  background: linear-gradient(to top right, #9F7437, #E3D293);
+}
+.sect2 .katal li .cen span {
+  font-size: 20px;
+  color: black;
+}
+.sect2 .katal li .cen p {
+  font-size: 13px;
+  font-family: "PP Pangram Sans";
+  color: #707070;
+  padding-left: 10px;
+}
+.sect2 .katal li .img-kat {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sect2 .katal li hr {
+  width: 60%;
+  margin-top: 20px;
+  margin-left: 17%;
+}
+
+.sect8 b {
+  display: block;
+  padding-left: 20px;
+}
+.sect8 p {
+  margin-bottom: -10px;
+}
+.sect8 ul {
+  -moz-column-count: 2;
+       column-count: 2;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  width: 100%;
+}
+.sect8 li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 320px;
+}/*# sourceMappingURL=style.css.map */

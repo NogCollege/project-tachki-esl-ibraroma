@@ -1,90 +1,447 @@
-body{
+*{
     margin: 0;
     padding: 0;
-    font-family: 'Inter';
+    
 }
-.container{
-    margin: 0 auto;
-    width: 1800px;
+body{
+    background-color: #F4F4F4;
 }
+
+
 header{
     background-color: #181818;
-    color: white;
+    display: flex;
+    height: 80px;
+    align-items: center;
 }
-.nav{
+
+.logo h1{
+    color: white;
+    font-weight: 400;
+    font-size: 32px;
+    font-family: 'Inter', sans-serif;
+}
+
+
+.container{
+    width: 1320px;
+    margin: 0 auto;
+    
+
+}
+
+.nav-menu{
+    width: 1800px;
+    margin: 0 auto;
+}
+
+.menu{
     display: flex;
     justify-content: space-between;
-    .sity{
-        display: flex;
-        justify-content: space-between;
-    }
-    .menu{
-        ul{
-            width: 400px;
-            display: flex;
-            justify-content: space-between;
-            list-style-type: none;
-        }
-            a{
-                color: white;
-                text-decoration: none;
-            }
-        
-    }
-    .znaki{
-        ul{
-            display: flex;
-            justify-content: center;
-            list-style-type: none;
-        }
-    }
-    .zvonok{
-        ul{
-            display: flex;
-        justify-content: space-between;
-        list-style-type: none;
-        }
-    }
-    .mashinka{
-        ul{
-            display: flex;
-            justify-content: space-between;
-            list-style-type: none;
-        }                                        
+    list-style-type: none;
+    align-items: center;
+}
+
+.menu-l{
+    display: flex;
+    color: white;
+
+    li{
+        color: white;
+        margin-left: 25px;
+        font-weight: 500;
+        font-size: 15px;
+        font-family: 'PP Pangram Sans', sans-serif 
     }
 }
 
-.head{
-     height: 860px;
-    background-image: url(img/bg.png);
-    font-family: 'Unbounded';
-    color: #fff;
-    h1{
-        margin: 0 auto;
-        text-align: center;
-        font-size: 89px;
+.but{
+    font-size: 13px;
+    font-weight: 700;
+    padding-bottom: 5px;
+    margin-top: 8px;
+    text-align: center;
+    width: 149px;
+    height: 44px;
+    border-radius: 8px;
+    border: solid #3C3C3C;
+    background-color: #181818;
+    color: white;
+    font-family: "PP Pangram Sans", sans-serif;
+}
+
+.nomer{
+    color: white;
+    font-weight: 700;
+    font-size: 18px;
+    font-family: 'Unbounded', sans-serif;
+}
+
+.we2{
+    display: flex;
+}
+
+.we2 img{
+    margin-left: 10px;
+}
+
+.we1{
+    display: flex;
+    img{
+        margin-left: 15px;
     }
-    .p{
-        text-align: center;
-        font-size: 24px;
-        color: #fff;
-        font-family: 'PP Pangram Sans';
+}
+
+.sect1{
+    color: white;
+    background-image: url(img/бг.png);
+    background-size: cover;
+    width: 1860px;
+    height: 966px;
+    margin-left: 20px;
+
+    hr{
+        width: 80%;
+        margin-left: 10%;
+        color: #FFFFFF; 
+        margin-top: 100px;
+        
     }
-    .row{
-        display: flex;
-        justify-content: space-between;
-        p{
-            font-family: 'PP Pangram Sans';
+    .sect1-text{
+        display: block;
+        text-align: center;
+        justify-content: center;
+        padding-top: 90px;
+        padding-bottom: 60px;
+        h1{
+            text-transform: uppercase;
+            font-size: 89px;
+            font-family: 'Unbounded'
         }
-        .row1{
-            font-size: 17px;
-            color: #fff;
+
+        p{
+            padding-top: 30px;
+            font-size: 24px;
+            font-family: 'PP Pangram Sans';
+            
+        }
+    }
+
+    .spis1{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-top: 100px;
+        position: relative;
+        z-index: 2;
+        li{
+            padding-left: 70px;
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            .row2{
-                margin-right: 15px;
+            h3{
+                display: flex;
+                color: black;
+                background-color: white;
+                width: 26px;
+                height: 26px;
+                border-radius: 100px;
+                font-size: 16px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            p{
+                padding-left: 20px;
+                font-size: 17px;
+                font-family: 'PP Pangram Sans';
+                font-weight: 300;
             }
         }
+    }
+}
+
+.dop-sect1{
+    position: absolute;
+    z-index: 1;
+    background-color: white;
+    left: 17%;
+    width: 1320px;
+    height: 271px;
+    border-radius: 20px;
+    bottom: -25%;
+
+
+
+    .form-but{
+        width: 201px;
+        height: 76px;
+        color: white;
+        border-radius: 10px;
+        border: solid 0px ;
+        font-family: 'PP Pangram Sans';
+        font-size: 16px;
+        background: linear-gradient(to top right,#9F7437, #E3D293,);
+    }
+    .text-for{
+        padding-left: 70px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        align-items: end;
+        width: 380px;
+        height: 54px;
+        p{
+            font-size: 14px;
+            font-family: 'PP Pangram Sans';
+        }
+    }
+
+    h2{
+        padding-top: 50px;
+        padding-left: 50px;
+        font-family: 'Unbounded';
+        font-size: 22px;
+    }
+
+    .forma{
+        display: flex;
+        padding-top: 30px;
+        padding-left: 20px;
+    }
+
+    .p{
+        display: grid;
+        width: 130px;
+        .gal{
+            margin-right: 15px;
+        }
+        justify-content: center;
+        align-items: end;
+        height: 54px;        
+    }
+
+    .form{
+        text-align: center;
+        width: 242px;
+        height: 76px;
+        margin-left: 20px;
+        border-radius: 10px;
+        background-color: #F5F5F5;
+        border: solid 1px #F5F5F5;
+        font-family: 'PP Pangram Sans';
+        color: #A4A4A4;
+
+    }
+    
+
+
+}
+
+
+
+
+ul{
+    list-style: none;
+}
+
+
+.sect2{
+    margin-top: 12%;
+
+    .sect2-he{
+        display: flex;
+        flex-direction: row;
+        margin-left: 90px;
+        h1{
+            color: #1F1F1F;
+            font-family: 'Unbounded';
+            font-size: 48px;
+            margin-left: 230px;
+        }
+
+        button{
+            margin-left: 20px;
+            margin-top: 15px;
+            height: 44px;
+            width: 124px;
+            background-color: #FFFFFF;
+            border-radius: 8px;
+            border: solid 4px #1F1F1F;
+        }
+    }
+
+    .car{
+        display: flex;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        flex-direction: row;
+        font-family: 'PP Pangram Sans';
+
+        img{
+            margin-right: 15px;
+        }
+
+        li{
+            margin-left: 50px;
+            
+        }
+
+        .black{
+            display: flex;
+            background-color: #1F1F1F;
+            width: 217px;
+            height: 74px;
+            color: #FFFFFF;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+
+            
+        }
+
+        .white{
+            display: flex;
+            background-color: #FFFFFF;
+            width: 217px;
+            height: 74px;
+            color: #1F1F1F;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        .gray{
+            display: flex;
+            background-color: #ffffff;
+            width: 217px;
+            height: 74px;
+            color: #1F1F1F;
+            border-radius: 10px;
+            justify-content: center;
+            align-items: center;
+            font-size: 14px;
+        }
+        
+    }
+
+    .car .black:hover, .car .white:hover, .car .gray:hover {
+        background-color: #EAEAEA; /* изменяем цвет при наведении */
+        color: #1F1F1F; /* меняем цвет текста */
+    }
+
+    .katal{
+        display: flex;
+        flex-direction: row;
+        column-count: 2;
+
+
+        li{
+            display: flex;
+            width: 424px;
+            height: 483px;
+            background-color: #FFFFFF;
+            flex-direction: column;
+            justify-content: center;
+            
+            margin-top: 30px;
+            margin-left: 30px;
+            
+
+            img{
+                width: 286px;
+                height: 153px;
+                
+            }
+
+            h4{
+                font-size:  20px;
+                font-family: 'PP Pangram Sans';
+                padding-top: 20px;
+            }
+            .text-s2{
+                display: flex;
+                flex-direction: row;
+                padding-top: 15px;
+                p{
+                    font-size: 13px;
+                    font-family: 'PP Pangram Sans';
+                    color: #707070;
+                }
+                .pa{
+                    padding-left: 10px;
+                }
+            }
+
+            .cen{
+                display: flex;
+                flex-direction: row;
+                padding-top: 15px;
+                
+                button{
+                    width: 135px;
+                    height: 40px;
+                    color: white;
+                    border-radius: 6px;
+                    border: solid 0px ;
+                    font-family: 'PP Pangram Sans';
+                    font-size: 12px;
+                    background: linear-gradient(to top right,#9F7437, #E3D293,);
+                }
+
+                span{
+                    font-size: 20px;
+                    color: black;
+                }
+
+                p{
+                    font-size: 13px;
+                    font-family: 'PP Pangram Sans';
+                    color: #707070;
+                    padding-left: 10px;
+
+                }
+            }
+
+            .img-kat{
+                display: flex;
+                align-items: center;
+                justify-content: center
+                
+            }
+
+            hr{
+                width: 60%;
+                margin-top: 20px;
+                margin-left: 17%;
+            }
+
+        }
+    }
+    
+}
+
+.sect8{
+    b{
+        display: block;
+        padding-left: 20px;
+    }
+
+    p{
+        margin-bottom: -10px;
+    }
+
+    ul{
+        column-count: 2;
+        column-gap: 20px;
+        width: 100%;
+    }
+
+    li{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        width: 320px;
     }
 }
