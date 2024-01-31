@@ -55,37 +55,33 @@ header{
     }
 }
 
-.but{
+.knop{
+    border-radius: 8px;
+    padding: 13px 20px;
+    color: white;
+    background-color: black;
+    border-color: white;
     font-size: 13px;
     font-weight: 700;
-    padding-bottom: 5px;
-    margin-top: 8px;
-    text-align: center;
-    width: 149px;
-    height: 44px;
-    border-radius: 8px;
-    border: solid #3C3C3C;
-    background-color: #181818;
-    color: white;
-    font-family: "PP Pangram Sans", sans-serif;
+    font-family: 'PP Pangram Sans', sans-serif;
 }
 
-.nomer{
+.tel{
     color: white;
     font-weight: 700;
     font-size: 18px;
     font-family: 'Unbounded', sans-serif;
 }
 
-.we2{
+.prof{
     display: flex;
 }
 
-.we2 img{
+.prof img{
     margin-left: 10px;
 }
 
-.we1{
+.soc{
     display: flex;
     img{
         margin-left: 15px;
@@ -103,7 +99,7 @@ header{
     hr{
         width: 80%;
         margin-left: 10%;
-        color: #FFFFFF; 
+        color: #FFFFFF;
         margin-top: 100px;
         
     }
@@ -114,7 +110,7 @@ header{
         padding-top: 90px;
         padding-bottom: 60px;
         h1{
-            text-transform: uppercase;
+
             font-size: 89px;
             font-family: 'Unbounded'
         }
@@ -250,16 +246,15 @@ ul{
     .sect2-he{
         display: flex;
         flex-direction: row;
-        margin-left: 90px;
+        margin-left: 280px;
         h1{
             color: #1F1F1F;
             font-family: 'Unbounded';
             font-size: 48px;
-            margin-left: 230px;
         }
 
         button{
-            margin-left: 20px;
+            margin-left: 30px;
             margin-top: 15px;
             height: 44px;
             width: 124px;
@@ -275,15 +270,12 @@ ul{
         padding-bottom: 30px;
         flex-direction: row;
         font-family: 'PP Pangram Sans';
+        
 
         img{
             margin-right: 15px;
         }
 
-        li{
-            margin-left: 50px;
-            
-        }
 
         .black{
             display: flex;
@@ -309,11 +301,12 @@ ul{
             justify-content: center;
             align-items: center;
             font-size: 14px;
+            margin-left: 30px;
         }
 
         .gray{
             display: flex;
-            background-color: #ffffff;
+            background-color: #EAEAEA;
             width: 217px;
             height: 74px;
             color: #1F1F1F;
@@ -321,13 +314,9 @@ ul{
             justify-content: center;
             align-items: center;
             font-size: 14px;
+            margin-left: 30px;
         }
-        
-    }
 
-    .car .black:hover, .car .white:hover, .car .gray:hover {
-        background-color: #EAEAEA; /* изменяем цвет при наведении */
-        color: #1F1F1F; /* меняем цвет текста */
     }
 
     .katal{
@@ -343,9 +332,9 @@ ul{
             background-color: #FFFFFF;
             flex-direction: column;
             justify-content: center;
-            
+            border-radius: 10px;
             margin-top: 30px;
-            margin-left: 30px;
+            margin-left: 20px;
             
 
             img{
@@ -358,11 +347,21 @@ ul{
                 font-size:  20px;
                 font-family: 'PP Pangram Sans';
                 padding-top: 20px;
+                padding-left: 40px;
             }
             .text-s2{
                 display: flex;
                 flex-direction: row;
                 padding-top: 15px;
+                padding-left: 40px;
+
+                img{
+                    width: 25px;
+                    height: 18px;
+                    padding-left: 15px;
+                    padding-right: 15px;
+                }
+
                 p{
                     font-size: 13px;
                     font-family: 'PP Pangram Sans';
@@ -373,11 +372,11 @@ ul{
                 }
             }
 
-            .cen{
+            .cena{
                 display: flex;
                 flex-direction: row;
                 padding-top: 15px;
-                
+                padding-left: 40px;
                 button{
                     width: 135px;
                     height: 40px;
@@ -398,7 +397,8 @@ ul{
                     font-size: 13px;
                     font-family: 'PP Pangram Sans';
                     color: #707070;
-                    padding-left: 10px;
+                    padding-left: 50px;
+                    padding-top: 5px;
 
                 }
             }
@@ -411,9 +411,10 @@ ul{
             }
 
             hr{
-                width: 60%;
+                width: 80%;
                 margin-top: 20px;
-                margin-left: 17%;
+                margin-left: 10%;
+                color: #EBEBEB;
             }
 
         }
@@ -421,27 +422,112 @@ ul{
     
 }
 
-.sect8{
-    b{
-        display: block;
-        padding-left: 20px;
+
+.te{
+    font-family: 'PP Pangram Sans';
+    
+    h4{
+        font-size: 28px;
+        color: #1F1F1F;
+        width: 1208px;
+        height: 114px;
+        margin-left: 20px;
     }
 
     p{
-        margin-bottom: -10px;
+        font-size: 18px;
+        color: #9F9F9F;
+        width: 1208px;
+        height: 60px;
+        margin-left: 20px;
+    }
+}
+
+
+.sect3{
+    margin-top: 80px;
+    background-image: url(img/бг\ \(1\).png);
+    width: 100%;
+    height: 764px;
+    background-repeat: no-repeat;
+    h1{
+        padding-top: 120px;
+        font-size: 48px;
+        color: #FFFFFF;
+        font-family: 'Unbounded';
     }
 
-    ul{
-        column-count: 2;
-        column-gap: 20px;
-        width: 100%;
+    .text-s3{
+        padding-top: 80px;
+        font-family: 'PP Pangram Sans';
+        color: #A4A4A4;
+        
+        .osnov{
+            width: 760px;
+            font-family: 'PP Pangram Sans';
+            font-size: 28px;
+            color: #FFFFFF;
+            height: 266px;
+        }
+        .pab{
+            width: 760px;
+            height: 60px;
+            padding-top: 30px;
+        }
     }
-
-    li{
+    
+    .forma-texts3{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        list-style: none;
-        width: 320px;
+        justify-content: space-around;
+        .form-s3{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            font-family: 'PP Pangram Sans';
+            padding-left: 90px;
+            padding-top: 50px;
+            .il{
+                width: 424px;
+                height: 76px;
+                border-radius: 10px;
+                padding-left: 25px;
+                margin-top: 20px;
+            }
+            button{
+                width: 453px;
+                height: 80px;
+                border-radius: 10px;
+                margin-top: 20px;
+            }
+
+            .ofform{
+                padding-top: 0px;
+                font-size: 14px;
+                width: 321px;
+                padding-left: 10px;
+                color: #B6B6B6;
+                span{
+                    color: #FFFFFF;
+                }
+            }
+    
+            .ir{
+                padding-top: 30px;
+                display: flex;
+            }
+
+            p{
+                color: #FFFFFF;
+                width: 424px;
+                font-size: 14px;
+                padding-top: 40px;
+            }
+
+            .wh{
+                padding-left: 35px;
+            }
+
+            
+        }
     }
 }
